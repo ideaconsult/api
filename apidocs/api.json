@@ -1,0 +1,31 @@
+{
+    "apiVersion": "2.5.9-SNAPSHOT",
+    "swaggerVersion": "1.2",
+    "apis": [
+        {
+            "Substances": "/substance",
+            "description": "Operations about chemical substances"
+        },
+        {
+            "Datasets": "/dataset",
+            "description": "Operations about datasets with chemical structures and properties"
+        },
+        {
+            "path": "/algorithm",
+            "description": "Operations about algorithms"
+        },
+        {
+            "path": "/model",
+            "description": "Operations about models"
+        }
+    ],
+
+    "info": {
+        "title": "AMBIT",
+        "description": "AMBIT Web services API.  You can find out more about Swagger \n    at <a href=\"http://ambit.sf.net\">http://ambit.sf.net</a> ",
+        "termsOfServiceUrl": "http://ambit.sf.net",
+        "contact": "jeliazkova.nina@gmail.com",
+        "license": "TODO",
+        "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    }
+}
