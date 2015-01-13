@@ -1,0 +1,155 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "id": "http://jsonschema.net",
+    "type": "object",
+    "properties": {
+        "uuid": {
+            "id": "http://jsonschema.net/uuid",
+            "type": "string"
+        },
+        "owner": {
+            "id": "http://jsonschema.net/owner",
+            "type": "object",
+            "properties": {
+                "substance": {
+                    "id": "http://jsonschema.net/owner/substance",
+                    "type": "object",
+                    "properties": {
+                        "uuid": {
+                            "id": "http://jsonschema.net/owner/substance/uuid",
+                            "type": "string"
+                        }
+                    }
+                },
+                "company": {
+                    "id": "http://jsonschema.net/owner/company",
+                    "type": "object",
+                    "properties": {
+                        "uuid": {
+                            "id": "http://jsonschema.net/owner/company/uuid",
+                            "type": "string"
+                        },
+                        "name": {
+                            "id": "http://jsonschema.net/owner/company/name",
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "protocol": {
+            "id": "http://jsonschema.net/protocol",
+            "type": "object",
+            "properties": {
+                "topcategory": {
+                    "id": "http://jsonschema.net/protocol/topcategory",
+                    "type": "string"
+                },
+                "category": {
+                    "id": "http://jsonschema.net/protocol/category",
+                    "type": "object",
+                    "properties": {
+                        "code": {
+                            "id": "http://jsonschema.net/protocol/category/code",
+                            "type": "string"
+                        }
+                    }
+                },
+                "endpoint": {
+                    "id": "http://jsonschema.net/protocol/endpoint",
+                    "type": "string"
+                },
+                "guidance": {
+                    "id": "http://jsonschema.net/protocol/guidance",
+                    "type": "array",
+                    "items": {
+                        "id": "http://jsonschema.net/protocol/guidance/0",
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "parameters": {
+            "id": "http://jsonschema.net/parameters",
+            "type": "object",
+            "properties": {}
+        },
+        "interpretation": {
+            "id": "http://jsonschema.net/interpretation",
+            "type": "object",
+            "properties": {
+                "result": {
+                    "id": "http://jsonschema.net/interpretation/result",
+                    "type": "string"
+                },
+                "criteria": {
+                    "id": "http://jsonschema.net/interpretation/criteria",
+                    "type": "string"
+                }
+            }
+        },
+        "effects": {
+            "id": "http://jsonschema.net/effects",
+            "type": "array",
+            "items": {
+                "id": "http://jsonschema.net/effects/0",
+                "type": "object",
+                "properties": {
+                    "endpoint": {
+                        "id": "http://jsonschema.net/effects/0/endpoint",
+                        "type": "string"
+                    },
+                    "conditions": {
+                        "id": "http://jsonschema.net/effects/0/conditions",
+                        "type": "object",
+                        "properties": {}
+                    },
+                    "result": {
+                        "id": "http://jsonschema.net/effects/0/result",
+                        "type": "object",
+                        "properties": {
+                            "unit": {
+                                "id": "http://jsonschema.net/effects/0/result/unit",
+                                "type": "string"
+                            },
+                            "loQualifier": {
+                                "id": "http://jsonschema.net/effects/0/result/loQualifier",
+                                "type": "string"
+                            },
+                            "loValue": {
+                                "id": "http://jsonschema.net/effects/0/result/loValue",
+                                "type": "integer"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "required": [
+        "uuid",
+        "owner",
+        "protocol",
+        "parameters",
+        "interpretation",
+        "effects",
+        "uuid",
+        "owner",
+        "protocol",
+        "parameters",
+        "interpretation",
+        "effects",
+        "uuid",
+        "owner",
+        "protocol",
+        "parameters",
+        "interpretation",
+        "effects",
+        "uuid",
+        "owner",
+        "protocol",
+        "parameters",
+        "interpretation",
+        "effects"
+    ]
+}
